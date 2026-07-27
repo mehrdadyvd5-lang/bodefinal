@@ -1,0 +1,31 @@
+name: Build Windows App
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore src/BodyComposition.sln
+
+      - name: Build (Release)
+        run: dotnet build src/BodyComposition.sln -c Release
+
+      - name: Upload built app
+        uses: actions/upload-artifact@v4
+        with:
+          name: HumanBodyCompositionMonitor-exe
+          path: src/BodyComposition.App/bin/Release/net48/**
+          if-no-files-found: error
