@@ -1,0 +1,22 @@
+<UserControl x:Class="BodyComposition.App.Views.Sections.SystemManagementView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Border Style="{StaticResource GlassCard}">
+        <StackPanel>
+            <TextBlock Text="{DynamicResource Str_SystemManagement}" FontSize="16" FontWeight="Bold"
+                       Foreground="{StaticResource BrandGreenDarkBrush}" Margin="0,0,0,16" />
+            <UniformGrid Columns="2" Rows="2">
+                <Button Content="{DynamicResource Str_OutputInspectionRecord}" Style="{StaticResource PillButton}"
+                        Margin="0,0,8,8" Height="70" Click="ExportInspection_Click" />
+                <Button Content="{DynamicResource Str_DeleteQuestionnaireOfWorkout}" Style="{StaticResource PillButton}"
+                        Background="#A83636" Margin="8,0,0,8" Height="70" Click="DeleteQuestionnaire_Click" />
+                <Button Content="{DynamicResource Str_InputInspectionRecord}" Style="{StaticResource PillButton}"
+                        Background="#2F5FA8" Margin="0,8,8,0" Height="70" Click="ImportInspection_Click" />
+                <Button Content="{DynamicResource Str_DeleteInspectionRecord}" Style="{StaticResource PillButton}"
+                        Background="#A83636" Margin="8,8,0,0" Height="70" Click="DeleteInspection_Click" />
+            </UniformGrid>
+            <TextBlock x:Name="StatusText" Margin="0,16,0,0" FontSize="12" Foreground="{StaticResource BrandGreenDarkBrush}"
+                       Visibility="Collapsed" TextWrapping="Wrap" />
+        </StackPanel>
+    </Border>
+</UserControl>

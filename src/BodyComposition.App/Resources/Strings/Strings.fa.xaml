@@ -1,0 +1,134 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="Str_AppTitle">سامانه پایش ترکیب بدن</sys:String>
+    <sys:String x:Key="Str_Version">نسخه ۵.۰</sys:String>
+
+    <!-- صفحه لایسنس -->
+    <sys:String x:Key="Str_LicenseTitle">فعال‌سازی نرم‌افزار</sys:String>
+    <sys:String x:Key="Str_LicenseSubtitle">برای فعال‌سازی، کد لایسنس را وارد کنید</sys:String>
+    <sys:String x:Key="Str_LicenseCodeLabel">کد لایسنس</sys:String>
+    <sys:String x:Key="Str_LicenseCodePlaceholder">XXXX-XXXX-XXXX-XXXX</sys:String>
+    <sys:String x:Key="Str_LicenseActivate">فعال‌سازی</sys:String>
+    <sys:String x:Key="Str_LicenseChecking">در حال بررسی آنلاین لایسنس…</sys:String>
+    <sys:String x:Key="Str_LicenseInvalid">کد لایسنس معتبر نیست.</sys:String>
+    <sys:String x:Key="Str_LicenseNoInternet">اتصال به سرور لایسنس برقرار نشد. اتصال اینترنت را بررسی کنید.</sys:String>
+    <sys:String x:Key="Str_LicenseSuccess">لایسنس با موفقیت تایید شد.</sys:String>
+    <sys:String x:Key="Str_LicenseExit">خروج</sys:String>
+
+    <!-- صفحه ورود -->
+    <sys:String x:Key="Str_UserId">شناسه کاربری</sys:String>
+    <sys:String x:Key="Str_Password">رمز عبور</sys:String>
+    <sys:String x:Key="Str_Go">ورود</sys:String>
+    <sys:String x:Key="Str_Registration">ثبت‌نام</sys:String>
+    <sys:String x:Key="Str_VisitorMode">حالت مهمان</sys:String>
+    <sys:String x:Key="Str_AdminMode">حالت مدیریت</sys:String>
+    <sys:String x:Key="Str_Close">بستن</sys:String>
+    <sys:String x:Key="Str_LoginError">شناسه کاربری یا رمز عبور نادرست است.</sys:String>
+    <sys:String x:Key="Str_LanguageToggle">English</sys:String>
+
+    <!-- ثبت‌نام -->
+    <sys:String x:Key="Str_CreateNewUser">ثبت کاربر جدید</sys:String>
+    <sys:String x:Key="Str_AccountNo">شماره حساب</sys:String>
+    <sys:String x:Key="Str_Name">نام</sys:String>
+    <sys:String x:Key="Str_Sex">جنسیت</sys:String>
+    <sys:String x:Key="Str_Male">مرد</sys:String>
+    <sys:String x:Key="Str_Female">زن</sys:String>
+    <sys:String x:Key="Str_ActivityLevel">سطح فعالیت روزانه</sys:String>
+    <sys:String x:Key="Str_ActivityLow">کم</sys:String>
+    <sys:String x:Key="Str_ActivityMedium">متوسط</sys:String>
+    <sys:String x:Key="Str_ActivityHigh">زیاد</sys:String>
+    <sys:String x:Key="Str_Race">نژاد</sys:String>
+    <sys:String x:Key="Str_ConfirmPassword">تکرار رمز عبور</sys:String>
+    <sys:String x:Key="Str_Birthday">تاریخ تولد</sys:String>
+    <sys:String x:Key="Str_Height">قد</sys:String>
+    <sys:String x:Key="Str_TelMobile">تلفن/موبایل</sys:String>
+    <sys:String x:Key="Str_Address">آدرس</sys:String>
+    <sys:String x:Key="Str_Portrait">تصویر پروفایل…</sys:String>
+    <sys:String x:Key="Str_Create">ایجاد</sys:String>
+    <sys:String x:Key="Str_Cancel">انصراف</sys:String>
+    <sys:String x:Key="Str_PasswordMismatch">رمز عبور و تکرار آن یکسان نیستند.</sys:String>
+    <sys:String x:Key="Str_RequiredFieldsMissing">لطفا تمام فیلدهای ستاره‌دار را پر کنید.</sys:String>
+
+    <!-- داشبورد / سایدبار -->
+    <sys:String x:Key="Str_FunctionForm">فرم عملیات</sys:String>
+    <sys:String x:Key="Str_StartBodyInspection">شروع اندازه‌گیری بدن</sys:String>
+    <sys:String x:Key="Str_StatisticAnalysis">تحلیل آماری</sys:String>
+    <sys:String x:Key="Str_MyExerciseSuggestion">پیشنهاد تمرین من</sys:String>
+    <sys:String x:Key="Str_SystemManagement">مدیریت سیستم</sys:String>
+    <sys:String x:Key="Str_UserManagement">مدیریت کاربران</sys:String>
+    <sys:String x:Key="Str_AdapterNotFound">آداپتور یافت نشد</sys:String>
+    <sys:String x:Key="Str_Logout">خروج از حساب</sys:String>
+
+    <!-- شروع اندازه‌گیری -->
+    <sys:String x:Key="Str_BodyInspectionDate">تاریخ اندازه‌گیری</sys:String>
+    <sys:String x:Key="Str_Weight">وزن (کیلوگرم)</sys:String>
+    <sys:String x:Key="Str_StandardRange">بازه استاندارد</sys:String>
+    <sys:String x:Key="Str_UpperBalance">تعادل بالاتنه</sys:String>
+    <sys:String x:Key="Str_TotalBalance">تعادل کل</sys:String>
+    <sys:String x:Key="Str_LowerBalance">تعادل پایین‌تنه</sys:String>
+    <sys:String x:Key="Str_TotalScore">امتیاز کل</sys:String>
+    <sys:String x:Key="Str_BioAge">سن زیستی</sys:String>
+    <sys:String x:Key="Str_BodyTypeEvaluation">ارزیابی نوع بدن</sys:String>
+    <sys:String x:Key="Str_HealthAdvice">توصیه سلامتی</sys:String>
+    <sys:String x:Key="Str_HealthWarning">هشدار سلامتی</sys:String>
+    <sys:String x:Key="Str_Start">شروع</sys:String>
+    <sys:String x:Key="Str_Save">ذخیره</sys:String>
+    <sys:String x:Key="Str_Print">چاپ</sys:String>
+    <sys:String x:Key="Str_MeasurementSaved">اندازه‌گیری ذخیره شد.</sys:String>
+
+    <!-- بلوتوث -->
+    <sys:String x:Key="Str_Analyzer">آنالایزر</sys:String>
+    <sys:String x:Key="Str_AnalyzerAddress">آدرس آنالایزر</sys:String>
+    <sys:String x:Key="Str_BluetoothMissing">آداپتور بلوتوث یافت نشد یا خطای ارتباطی رخ داد! لطفا قفل را دوباره وصل کرده و رفرش کنید.</sys:String>
+    <sys:String x:Key="Str_Connect">اتصال</sys:String>
+    <sys:String x:Key="Str_Refresh">تازه‌سازی</sys:String>
+    <sys:String x:Key="Str_Stop">توقف</sys:String>
+    <sys:String x:Key="Str_AutoConnectLast">اتصال خودکار به آخرین آنالایزر استفاده‌شده (پیشنهادی)</sys:String>
+
+    <!-- تحلیل آماری -->
+    <sys:String x:Key="Str_AnalysisCycle">بازه تحلیل</sys:String>
+    <sys:String x:Key="Str_CycleDay">روز</sys:String>
+    <sys:String x:Key="Str_CycleWeek">هفته</sys:String>
+    <sys:String x:Key="Str_CycleMonth">ماه</sys:String>
+    <sys:String x:Key="Str_Date">تاریخ</sys:String>
+    <sys:String x:Key="Str_ShowReport">نمایش گزارش</sys:String>
+    <sys:String x:Key="Str_Delete">حذف</sys:String>
+    <sys:String x:Key="Str_NoData">هنوز اندازه‌گیری‌ای ثبت نشده است.</sys:String>
+
+    <!-- پرسشنامه -->
+    <sys:String x:Key="Str_Questionnaire">پرسشنامه</sys:String>
+    <sys:String x:Key="Str_Q1">۱. آیا به طور منظم ورزش می‌کنید؟ (تک‌گزینه‌ای)</sys:String>
+    <sys:String x:Key="Str_Q2">۲. هفته‌ای چند بار ورزش می‌کنید؟ (تک‌گزینه‌ای)</sys:String>
+    <sys:String x:Key="Str_Q3">۳. هر بار چقدر ورزش می‌کنید؟ (تک‌گزینه‌ای)</sys:String>
+    <sys:String x:Key="Str_Q4">۴. هدف شما از ورزش چیست؟ (تک‌گزینه‌ای)</sys:String>
+    <sys:String x:Key="Str_Q5">۵. آیا به این بیماری‌ها مبتلا هستید یا بوده‌اید؟ (حداکثر ۲ مورد)</sys:String>
+    <sys:String x:Key="Str_Q6">۶. برنامه ورزشی مورد علاقه‌تان را انتخاب کنید. (حداکثر ۶ مورد)</sys:String>
+
+    <!-- مدیریت / ادمین -->
+    <sys:String x:Key="Str_AdminModeTitle">حالت مدیریت: مدیر سیستم</sys:String>
+    <sys:String x:Key="Str_UserAdministration">مدیریت کاربران</sys:String>
+    <sys:String x:Key="Str_SearchAccountName">جستجوی شماره حساب/نام</sys:String>
+    <sys:String x:Key="Str_DeleteUser">حذف کاربر</sys:String>
+    <sys:String x:Key="Str_DeleteBodyInspectionData">حذف داده اندازه‌گیری بدن</sys:String>
+    <sys:String x:Key="Str_DeleteQuestionnaire">حذف پرسشنامه</sys:String>
+    <sys:String x:Key="Str_ClearPassword">پاک کردن رمز عبور</sys:String>
+    <sys:String x:Key="Str_ReviseAdminInfo">ویرایش اطلاعات مدیر</sys:String>
+    <sys:String x:Key="Str_ChangeCompanyLogo">تغییر لوگوی شرکت</sys:String>
+    <sys:String x:Key="Str_ShowLogo">نمایش لوگو</sys:String>
+    <sys:String x:Key="Str_OutputUserInfo">خروجی اطلاعات کاربران</sys:String>
+    <sys:String x:Key="Str_InputUserInfo">ورودی اطلاعات کاربران</sys:String>
+    <sys:String x:Key="Str_ConfirmDeleteUser">این کاربر و تمام داده‌هایش حذف شود؟ این کار قابل بازگشت نیست.</sys:String>
+    <sys:String x:Key="Str_Yes">بله</sys:String>
+    <sys:String x:Key="Str_No">خیر</sys:String>
+
+    <!-- مدیریت سیستم -->
+    <sys:String x:Key="Str_OutputInspectionRecord">خروجی سوابق اندازه‌گیری</sys:String>
+    <sys:String x:Key="Str_InputInspectionRecord">ورودی سوابق اندازه‌گیری</sys:String>
+    <sys:String x:Key="Str_DeleteInspectionRecord">حذف سوابق اندازه‌گیری</sys:String>
+    <sys:String x:Key="Str_DeleteQuestionnaireOfWorkout">حذف پرسشنامه ورزشی</sys:String>
+    <sys:String x:Key="Str_ExportedTo">خروجی در:</sys:String>
+    <sys:String x:Key="Str_ImportedFrom">ورودی از:</sys:String>
+
+</ResourceDictionary>
