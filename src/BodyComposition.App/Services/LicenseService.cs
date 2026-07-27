@@ -23,7 +23,8 @@ namespace BodyComposition.App.Services
     {
         // TODO: replace with the real licensing API once it's ready.
         private const string LicenseApiBaseUrl = "https://license.yourdomain.com/api/v1";
-
+        
+        private const string DevTestCode = "TEST-TEST-TEST-TEST";
         private static readonly HttpClient Http = new HttpClient
         {
             Timeout = TimeSpan.FromSeconds(12)
@@ -33,6 +34,11 @@ namespace BodyComposition.App.Services
         {
             if (string.IsNullOrWhiteSpace(licenseCode))
                 return new LicenseCheckResult { IsValid = false, Message = "Empty code" };
+            if (licenseCode.Trim().Equals(DevTestCode, StringComparison.OrdinalIgnoreCase))
+            {
+                CacheLicenseLocally(licenseCode);
+                return new LicenseCheckResult { IsValid = true, Message = "Dev test mode - no server contacted." };
+            }
 
             var payload = new
             {
